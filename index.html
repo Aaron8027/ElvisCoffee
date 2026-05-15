@@ -274,106 +274,32 @@
     font-size: 1.1rem;
     line-height: 1.7;
   }
-
-  /* MENU */
-  #menu {
-    background: var(--espresso);
-    padding: 8rem 4rem;
-  }
-
-  .menu-header {
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-
-  .menu-header .section-title { color: var(--crema); }
-  .menu-header .section-text { color: var(--humo); max-width: 500px; margin: 0 auto; }
-
-  .menu-categories {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
-  }
-
-  .cat-btn {
-    padding: 0.6rem 1.8rem;
-    border: 1px solid var(--humo);
-    background: transparent;
-    color: var(--humo);
-    font-family: 'Lato', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .cat-btn.active, .cat-btn:hover {
-    background: var(--caramelo);
-    border-color: var(--caramelo);
-    color: var(--espresso);
-  }
-
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: rgba(200,129,58,0.2);
-  }
-
-  .menu-item {
-    background: var(--espresso);
-    padding: 2.5rem;
-    transition: background 0.3s;
-    cursor: default;
-  }
-
-  .menu-item:hover { background: #3a2212; }
-
-  .menu-item-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.8rem;
-  }
-
-  .menu-item-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: var(--crema);
-    font-weight: 400;
-  }
-
-  .menu-item-price {
-    font-size: 0.9rem;
-    color: var(--caramelo);
-    font-weight: 700;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    margin-left: 1rem;
-  }
-
-  .menu-item-desc {
-    font-size: 0.85rem;
-    color: var(--humo);
-    line-height: 1.7;
-    font-weight: 300;
-  }
-
-  .menu-item-tag {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.65rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--caramelo);
-    border: 1px solid rgba(200,129,58,0.3);
-    padding: 0.2rem 0.6rem;
-  }
+<!-- MENU -->
+<section id="menu">
+  <div class="menu-header fade-in" style="text-align:center; padding: 8rem 4rem;">
+    <p class="section-label" style="color: var(--caramelo);">Lo que ofrecemos</p>
+    <h2 class="section-title" style="color: var(--crema);">Nuestro <em style="color: var(--caramelo);">Menú</em></h2>
+    <p class="section-text" style="color: var(--humo); max-width: 500px; margin: 0 auto 3rem;">
+      Bebidas calientes, frappés, comida y más. Elaborado con los mejores ingredientes.
+    </p>
+    <a href="https://aaron8027.github.io/ElvisCoffee/menu.html" target="_blank" style="
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1.1rem 3rem;
+      background: #C8813A;
+      color: #2C1A0E;
+      text-decoration: none;
+      font-family: Lato, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+    ">
+      ☕ Ver Menú Completo
+    </a>
+  </div>
+</section>
 
   /* GALLERY */
   #galeria {
